@@ -27,9 +27,9 @@ I attended a few talks today. The most interesting ones where:
 - [Igniting the open hardware ecosystem with RISC-V](https://fosdem.org/2018/schedule/event/riscv/)
 
 While the actual application of the first talk remains to be seen,
-they did apply an interesting way of working. They used the concepts
-of 1 domain, the server world, and applied it in another, the embedded 
-domain. They did do  some tweaking as you dont have the same amount
+they did apply an interesting way of working. The concepts
+of 1 domain, the server world, were applied to another, the embedded 
+domain. Some tweaking was required as you do not have the same amount
 of resources on an embedded device.
 
 I devoted a seperate post to to the gstreamer talks as this was too much
