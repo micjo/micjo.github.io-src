@@ -1,6 +1,6 @@
 Title: Fosdem 2018
 Date: 2018-02-11 12:30:00
-Modified: 2018-02-11 12:30:00
+Modified: 2018-02-11 18:30:00
 Category: FOSDEM 
 Tags: FOSDEM, OpenSource
 Slug: fosdem-2018
@@ -20,17 +20,44 @@ you want to go to. FOSDEM is a week worth of
 seminars condensed into 1 weekend.
 
 ## Day 1
-| 12.00 | [How to keep your embedded linux device up and running](fosdem-2018-talk-01.html) |
-| -- | -- |
-| 12.45 | [Securing embedded systems using virtualization](https://fosdem.org/2018/schedule/event/vai_securing_embedded_systems/) |
-| 13.30 | [Gstreamer for embedded devices](https://fosdem.org/2018/schedule/event/om_gst_embedded/)
-| 14.00 | [Modern tools to debug GStreamer applications](https://fosdem.org/2018/schedule/event/om_gst_dbg/)
-| 15.30 | [Piece of cake - testing remote embdded devices made easy](https://fosdem.org/2018/schedule/event/testing_remote_devices/)
-| 17.00 | [Igniting the open hardware ecosystem with RISC-V](https://fosdem.org/2018/schedule/event/riscv/)
-| 18.30 | [Gstreamer for tiny devices](https://fosdem.org/2018/schedule/event/gstreamer_for_tiny_devices/)
+I attended a few talks today. The most interesting ones where:
 
-More and more speakers are (ab)using the term 'embedded' to lure in more attendants. 
-Especially the talk on securing embedded devices was guilty of this
+- [How to keep your embedded linux device up and running](https://fosdem.org/2018/schedule/event/linux_up_and_running/)
+- [GStreamer talks](fosdem-2018-gstreamer.html)
+- [Igniting the open hardware ecosystem with RISC-V](https://fosdem.org/2018/schedule/event/riscv/)
+
+While the actual application of the first talk remains to be seen,
+they did apply an interesting way of working. They used the concepts
+of 1 domain, the server world, and applied it in another, the embedded 
+domain. They did do  some tweaking as you dont have the same amount
+of resources on an embedded device.
+
+I devoted a seperate post to to the gstreamer talks as this was too much
+information to add here.
+
+RISC-V, the third talk in the list, is an open source hardware project.
+10 years ago this would be unthinkable. The presentation they did was running
+on a system with their chip on it. Very impressive. 
+
+<img src="img/risc-v.jpg" alt="risc-v" style="width: 800px;" />
+
+There were some other talks i went to. I will not go into detail
+about them however. I have added quite a few items to my need-to-read-about
+list. 
+
+| Concept | Description |
+| -- | -- |
+| [muxpi](https://git.tizen.org/cgit/tools/muxpi) | a remote controllable device to do embedded testing |
+| [Conan](https://conan.io/) | a C/C++ package manager for developers |
+| [RTL-SDR](https://www.rtl-sdr.com/) | Cheap SDR for hobbyists |
+| [syslog-ng](https://syslog-ng.org/) | syslog on steroids |
+| [mqtt](http://mqtt.org/) | Lightweight messaging protocol |
+| [Pagekite](https://pagekite.net/) | Network Tunneling |
+| [ROP](https://en.wikipedia.org/wiki/Return-oriented_programming) | Return oriented programming |
+
+
+The degeneration of the word embedded is rampant. More and more speakers 
+are (ab)using the term 'embedded' to lure in more attendants. 
 
 ## Day 2
 During this day i was responsible for the video stream in the IoT devroom. 
