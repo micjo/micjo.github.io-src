@@ -1,0 +1,39 @@
+@startuml
+
+Title Priority Inheritance
+robust "Scheduler" as sched
+concise "Active Task" as act_task
+
+@0
+act_task is Task_a
+sched is Low_Prio
+
+@100
+act_task -> sched : Acquire Lock L
+
+@400
+act_task is Task_b
+act_task -> sched : INTR
+sched is Med_Prio
+
+@500
+act_task is Task_c
+act_task -> sched : INTR
+sched is High_Prio
+
+sched@560 <-> @600 : contention on Lock L
+
+@600
+act_task is Task_a
+sched is High_Prio
+act_task -> sched : priority elevation
+
+@900
+act_task is Task_c
+act_task -> sched : Release Lock L
+
+@1100
+act_task is Task_b
+sched is Low_Prio
+
+@enduml
